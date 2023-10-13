@@ -1,0 +1,6 @@
+INSERT INTO INSTRUCTORS (INSTRUCTOR_ID, NAME, HOUR_SALARY)
+                        VALUES (1001, 'Dan Cohen', 40);
+INSERT INTO INSTRUCTORS (INSTRUCTOR_ID, NAME, HOUR_SALARY)
+                        VALUES (1002, 'Yonit Shir', 50);
+
+
