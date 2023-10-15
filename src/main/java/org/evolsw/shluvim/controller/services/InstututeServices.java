@@ -10,5 +10,6 @@ public interface InstututeServices {
     List<Institute> loadAll();
     Institute load(Long id);
     Institute save(Institute institute);
+    double getBaseCost(Long id);
 
 }

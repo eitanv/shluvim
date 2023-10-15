@@ -29,4 +29,11 @@ public class InstituteServicesImpl implements InstututeServices {
     public Institute save(Institute institute) {
         return instituteRepository.save(institute);
     }
+
+    @Override
+    public double getBaseCost(Long id) {
+        return instituteRepository.getReferenceById(id).getBaseCost();
+    }
+
+
 }
