@@ -8,6 +8,6 @@ import java.sql.Time;
 public class InstructorReportResponse {
     Long instructorId;
     int day;
-    Time instructorHours;
+    String instructorHours;
     double instructorsCharge;
 }

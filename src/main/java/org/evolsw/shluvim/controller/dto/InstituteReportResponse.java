@@ -9,7 +9,7 @@ import java.util.List;
 public class InstituteReportResponse {
 
     Long reportId;
-    Time totalHours;
+    String totalHours;
     double totalCharge;
     List<InstructorReportResponse> instructorReportResponseList;
 }

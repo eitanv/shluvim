@@ -4,15 +4,13 @@ package org.evolsw.shluvim.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import java.sql.Time;
-
 @Entity
 @Table(name = "INSTITUTE_REPORTS")
 @Data
 @SequenceGenerator(name = "start@100001", sequenceName = "start@100001", initialValue = 100001)
 public class InstituteReport {
 
-    public InstituteReport(Long instituteId, int logYear, int logMonth, Time totalHours, double totalCharge) {
+    public InstituteReport(Long instituteId, int logYear, int logMonth, String totalHours, double totalCharge) {
         this.instituteId = instituteId;
         this.logYear = logYear;
         this.logMonth = logMonth;
@@ -25,7 +23,7 @@ public class InstituteReport {
     Long reportId;
     int logYear;
     int logMonth;
-    Time totalHours;
+    String totalHours;
     double totalCharge;
     Long instituteId;
 }
